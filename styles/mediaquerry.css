@@ -1,0 +1,47 @@
+@media (max-width:1000px) {
+    .welcome{   
+        font-size:75px ;
+    }
+
+    .resume{
+        font-size:18px ;
+    }
+
+    .center img{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:860px){
+    .center img{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:820px){
+    .center img{
+        display: none;
+    }
+}
+
+@media (max-width:575px){
+    ul{
+        display: none;
+    }
+
+    #menu-burguer{
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    #close-button{
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
