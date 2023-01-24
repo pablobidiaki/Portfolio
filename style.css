@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(25, 25, 24, 0.5) .100%), url("imgs/fundo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    list-style-type: none;
+    margin: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+li:hover{
+    font-weight: 700;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+
+a img{
+    width: 30px;
+    height: 30px;
+}
+
+a img:hover{
+    transition: .5s;
+    transform: scale(1.5);
+}
+
+.contact{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.contact a{
+    margin: 0px 20px;
+}
+
+.center{
+    display: flex;
+    flex-direction:row;
+    justify-content:center ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.center .text{
+    width: 500px;
+}
+
+.center p{
+    color:#fff;
+}
+
+.center img{
+    margin-top: 20px;
+    width: 450px;
+    height: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.welcome{
+    font-size: 85px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.resume{
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
