@@ -43,7 +43,7 @@ img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 5px black;
     display: block;
     margin: 0 auto;
 }
