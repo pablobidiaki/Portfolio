@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: #252525;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+li:hover{
+    font-weight: 700;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+
+a img{
+    width: 30px;
+    height: 30px;
+}
+
+a img:hover{
+    transition: .5s;
+    transform: scale(1.5);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px black;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+p{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    width: 45vw;
+}
+
+.hello{
+    font-size: 30px;
+}
+
+.contact{
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.contact a{
+    margin: 0px 20px;
+}
+
+#menu-burguer, #close-button{
+    display: none;
+}
