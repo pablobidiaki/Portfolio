@@ -33,12 +33,6 @@
         display: none;
     }
 
-    #menu-burguer, #close-button{
-        display: none;
-    }
-}
-
-@media (max-width:575px){
     ul{
         display: none;
     }
