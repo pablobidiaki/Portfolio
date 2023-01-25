@@ -25,8 +25,9 @@ ul{
     justify-content: center;
 }
 
-li{
+li, a{
     list-style-type: none;
+    text-decoration: none;
     margin: 20px 30px;
     color: #fff;
     cursor: pointer;
@@ -98,6 +99,7 @@ a img:hover{
     margin: 20px;
     text-align: center;
     font-size: 20px;
+    font-weight: 500;
 }
 
 #menu-burguer, #close-button{
