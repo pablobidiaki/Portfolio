@@ -127,8 +127,7 @@ a img:hover{
 }
 
 #modal{
-    width: 60vw;
-    height: 90vh;
+    width: 40vw;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
@@ -146,10 +145,13 @@ a img:hover{
 }
 
 #details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: black;
     font-size: 20px;
     text-align: center;
-    margin: 10px 70px;
+    margin: 20px;
 }
 
 #buttonClose{
@@ -162,11 +164,15 @@ a img:hover{
     display: block;
     margin: 0 auto;
     text-transform: uppercase;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
     cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#buttonClose:hover{
+    transition: .5s;
+    background-color: lightgray;
+    color: #252525;
+    box-shadow: 0px 0px 5px #25252546;
 }
 
 .none{
