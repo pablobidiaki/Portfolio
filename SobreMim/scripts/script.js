@@ -29,7 +29,9 @@ function bugBurguer(){
     var largura = window.innerWidth;
     if(largura > 962){
         burguer.style.display = "none"
+        lista.style.display = 'flex'
     }else {
         burguer.style.display = 'block'
+        lista.style.display = 'none'
     }
 }

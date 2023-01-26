@@ -46,7 +46,7 @@ h1{
 }
 
 h2{
-    color: white;
+    color: darkgray;
     text-align: center;
     font-size: 25px;
     margin-bottom: 50px;
@@ -78,9 +78,8 @@ a img:hover{
 .container{
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
-    grid-column-gap: 20px;
     grid-row-gap:30px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .container div{
@@ -98,6 +97,10 @@ a img:hover{
     background-color: rgb(104, 104, 104);
 }
 
+.container div img{
+    width: 100%;
+}
+
 .container p{
     color: white;
     font-size: 20px;
@@ -107,9 +110,7 @@ a img:hover{
 
 .container img:hover{
     animation: float 3s ease-in-out infinite;
-
 }
-
 
 #menu-burguer, #close-button{
     display: none;
@@ -127,7 +128,7 @@ a img:hover{
 }
 
 #modal{
-    width: 40vw;
+    max-width: 550px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);

@@ -15,6 +15,9 @@ const title = document.getElementById('title')
 const details = document.getElementById('details')
 const buttonClose = document.getElementById('buttonClose')
 
+const burguer = document.getElementById("menu-burguer")
+const closeBurguer = document.getElementById("close-button")
+const lista = document.getElementById("lista")
 
 
 function travarScroll() {
@@ -28,7 +31,7 @@ function ativarScroll() {
 }
 
 html.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -38,7 +41,7 @@ html.addEventListener('click', () => {
 })
 
 css.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -48,7 +51,7 @@ css.addEventListener('click', () => {
 })
 
 js.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -58,7 +61,7 @@ js.addEventListener('click', () => {
 })
 
 react.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -68,7 +71,7 @@ react.addEventListener('click', () => {
 })
 
 reactNative.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -78,7 +81,7 @@ reactNative.addEventListener('click', () => {
 })
 
 php.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -88,7 +91,7 @@ php.addEventListener('click', () => {
 })
 
 sql.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
@@ -98,20 +101,22 @@ sql.addEventListener('click', () => {
 })
 
 cSharp.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
     title.innerHTML = "C#"
-    details.innerHTML = "Creio que essa tenha sido a materia mais prática do meu curso até o momento onde o professor que ministrava as aula já tinha trabalhado como desenvolvedor se Software e por esse fato o conhecimento que ele conseguia nos passar era algo muito amplo."
+    details.innerHTML = "Creio que essa tenha sido a materia mais prática do meu curso até o momento onde o professor que ministrava as aula já tinha trabalhado como desenvolvedor se Software e por esse fato o conhecimento que ele conseguia nos passar era algo muito amplo. Mas como meu foco no momento é Front-end não me aprofundei na linguagem mas realizei diversos projetos acadêmicos"
     travarScroll();
 })
 
 python.addEventListener('click', () => {
-    window.location.href="#lista"
+    window.location.href="#main"
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
+    title.innerHTML = "Python"
+    details.innerHTML = "Tive contato com python na Etec no meu primeiro semestre na aula de Algoritmos, onde depois de realizarmos diversos exercícios com Portugol para trabalharmos a lógica partimos para uma linguagem de programação, onde a escolhida foi python."
     travarScroll();
 })
 
@@ -121,3 +126,35 @@ buttonClose.addEventListener('click', () => {
     header.style.opacity = "1"
     ativarScroll();
 })
+
+burguer.addEventListener('click', () => {
+    burguer.style.display = "none"
+    closeBurguer.style.display = "block"
+    main.style.display="none"
+    burguer.style.opacity = "0"
+    lista.style.display = 'flex'
+    lista.classList.add('burguerON')   
+})
+
+closeBurguer.addEventListener('click', () => {
+    closeBurguer.style.display = "none"
+    burguer.style.display = "block"
+    main.style.display="block"
+    burguer.style.opacity = "1"
+    lista.style.display = 'none'
+    lista.classList.remove('burguerON')
+
+    setInterval(bugBurguer, 500)
+})
+
+
+function bugBurguer(){
+    var largura = window.innerWidth;
+    if(largura > 828){
+        burguer.style.display = "none"
+        lista.style.display = 'flex'
+    }else {
+        burguer.style.display = 'block'
+        lista.style.display = 'none'
+    }
+}
