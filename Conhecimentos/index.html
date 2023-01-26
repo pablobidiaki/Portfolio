@@ -10,7 +10,7 @@
     <title>Conhecimentos</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <ul id="lista">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../SobreMim/index.html">Sobre Mim</a></li>
@@ -20,43 +20,43 @@
             <img id="close-button" src="../imgs/close.png" alt="">
             <img id="menu-burguer" src="../imgs/menu-burguer.png" align="right" alt="">
     </header>
-    <main>
+    <main id="main">
         <h1>Aqui estão a maioria dos meus conhecimentos !</h1>
         <h2>Clique por cima dos cards para saber qual o nível de conhecimento,onde obtive e onde já apliquei tal tecnologia</h2>
         <div class="container">
-            <div>
-                <img src="../imgs/html.png" alt="">
-                <p>HTML5</p>
+            <div id="html">
+                    <img src="../imgs/html.png" alt="">
+                    <p>HTML5</p>
             </div>
-            <div>
+            <div id="css">
                 <img src="../imgs/css.png" alt="">
                 <p>CSS3</p>
             </div>
-            <div>
+            <div id="js">
                 <img src="../imgs/javascript_logo.png" alt="">
                 <p>Javascript</p>
             </div>
-            <div>
+            <div id="react">
                 <img src="../imgs/react.png" alt="">
                 <p>React</p>
             </div>
-            <div>
+            <div id="react-native">
                 <img src="../imgs/react-native.png" alt="">
                 <p>React Native</p>
             </div>
-            <div>
+            <div id="php">
                 <img src="../imgs/php.webp" alt="">
                 <p>PHP</p>
             </div>
-            <div>
+            <div id="sql">
                 <img src="../imgs/mysql.png" alt="">
                 <p>MySQL</p>
             </div>
-            <div>
+            <div id="c-sharp">
                 <img src="../imgs/cSharp.png" alt="">
                 <p>C#</p>
             </div>
-            <div>
+            <div id="python">
                 <img src="../imgs/python.png" alt="">
                 <p>Python</p>
             </div>
@@ -66,6 +66,14 @@
             <a href="https://www.linkedin.com/in/pablo-bidiaki/" target="_blank"><img src="../imgs/linkedin.png" alt=""></a>
         </div>
     </main>
+    <div id="modal" class="none">
+        <h1 id="title"></h1>
+        <p id="details"></p>
+        <div id="teste">
+
+        </div>
+        <button id="buttonClose">Fechar</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
