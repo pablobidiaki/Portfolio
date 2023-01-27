@@ -1,0 +1,26 @@
+@media (max-width: 830px){
+    p{
+        width: 50vw;
+    }
+
+    #lista{
+        display: none;
+    }
+
+    #menu-burguer{
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    #close-button{
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        box-shadow: none;
+    }
+}
