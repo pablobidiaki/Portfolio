@@ -3,13 +3,16 @@ const closeBurguer = document.getElementById("close-button")
 const lista = document.getElementById("lista")
 const main = document.getElementById("main")
 
-const subir = document.getElementById("voltar")
-
-const navHt = document.getElementById('navHT')
-const navApi = document.getElementById('navApi')
-const navJS = document.getElementById('navJS')
-const navReact = document.getElementById('navReact')
-const navPhp = document.getElementById('navPhp')
+const imgHTML = document.getElementById('imgHTML')
+const textHTML = document.getElementById('textHTML')
+const imgJs = document.getElementById('imgJs')
+const textJs = document.getElementById('textJs')
+const imgReact = document.getElementById('imgReact')
+const textReact = document.getElementById('textReact')
+const imgPhp = document.getElementById('imgPhp')
+const textPhp = document.getElementById('textPhp')
+const imgApi = document.getElementById('imgApi')
+const textApi = document.getElementById('textApi')
 
 burguer.addEventListener('click', () => {
     burguer.style.display = "none"
@@ -43,26 +46,62 @@ function bugBurguer(){
     }
 }
 
-subir.addEventListener('click', () => {
-    window.location.href="#main"
+imgHTML.addEventListener('mouseover', () => {
+    imgHTML.style.opacity = '0'
+    textHTML.style.opacity = '1'
+    textHTML.style.transform = 'translate(-55%)'
 })
 
-navHt.addEventListener('click', () => {
-    window.location.href = "#NAVhtml&css"
+textHTML.addEventListener('mouseout', () => {
+    imgHTML.style.opacity = '1'
+    textHTML.style.opacity = '0'
+    textHTML.style.transform = 'translate(-160%)'    
 })
 
-navApi.addEventListener('click', () => {
-    window.location.href = "#NAVApi"
+imgJs.addEventListener('mouseover', () => {
+    imgJs.style.opacity = '0'
+    textJs.style.opacity = '1'
+    textJs.style.transform = 'translate(-55%)'
 })
 
-navReact.addEventListener('click', () => {
-    window.location.href = "#NAVReact"
+textJs.addEventListener('mouseout', () => {
+    imgJs.style.opacity = '1'
+    textJs.style.opacity = '0'
+    textJs.style.transform = 'translate(-160%)'    
 })
 
-navPhp.addEventListener('click', () => {
-    window.location.href = "#NAVPhp"
+imgReact.addEventListener('mouseover', () => {
+    imgReact.style.opacity = '0'
+    textReact.style.opacity = '1'
+    textReact.style.transform = 'translate(-55%)'
 })
 
-navJS.addEventListener('click', () => {
-    window.location.href = "#NAVJs"
+textReact.addEventListener('mouseout', () => {
+    imgReact.style.opacity = '1'
+    textReact.style.opacity = '0'
+    textReact.style.transform = 'translate(-160%)'    
+})
+
+imgPhp.addEventListener('mouseover', () => {
+    imgPhp.style.opacity = '0'
+    textPhp.style.opacity = '1'
+    textPhp.style.transform = 'translate(-55%)'
+})
+
+textPhp.addEventListener('mouseout', () => {
+    imgPhp.style.opacity = '1'
+    textPhp.style.opacity = '0'
+    textPhp.style.transform = 'translate(-160%)'    
+})
+
+imgApi.addEventListener('mouseover', () => {
+    imgApi.style.opacity = '0'
+    textApi.style.opacity = '1'
+    textApi.style.transform = 'translate(-55%)'
+})
+
+textApi.addEventListener('mouseout', () => {
+    imgApi.style.opacity = '1'
+    textApi.style.opacity = '0'
+    textApi.style.transform = 'translate(-160%)'    
 })

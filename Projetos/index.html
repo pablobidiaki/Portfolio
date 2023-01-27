@@ -23,150 +23,107 @@
     <main id="main">
         <h1 class="firstTitle">Aqui estão meus principais projetos !</h1>
         <h2>Os projetos estão separados por tecnologias, ao clicar por cima de um projeto aparecerá uma aba com mais detalhes do card selecionado !</h2>
-        <h2>Clique na tecnologia desejada abaixo e seja enviado aos projetos !</h2>
+        <h2>Descendo a página ao lado esquerdo irá aparecer uma barra de navegação, que ao passar o mouse por cima de alguma opção,onde vai informar o nome da tecnologia e a cor que ela representa com base no fundo dos cards dos projetos abaixo !</h2>
 
-        <section>
-            <div class="buttonsNav">
-                <button id="navHT">
-                    <img src="medias/html-css.png" alt=""><br>
-                    <p>HTML e CSS</p>
-                </button>
-                <button id="navApi">
-                    <img src="medias/api.png" alt=""> <br>
-                    <p>API</p>
-                </button>
-                <button id="navJS">
-                    <img src="../imgs/javascript_logo.png" alt=""> <br>
-                    <p>Javascript</p>
-                </button>
-                <button id="navReact">
-                    <img src="../imgs/react.png" alt=""> <br>
-                    <p>React.JS</p>
-                </button>
-                <button id="navPhp">
-                    <img src="../imgs/php.webp" alt=""> <br>
-                    <p>PHP</p>
-                </button>
+        <div class="nav-bar-techs">
+            <div class="opcoes-nav">
+                <img id="imgHTML" src="medias/html-css.png" alt="">
+                <p style="background-image: linear-gradient(to bottom right,#005AA7, purple);" id="textHTML">HTML e CSS</p>
             </div>
-        </section>
-
-        <div id="NAVhtml&css" class="tech">
-            <img  src="medias/html-css.png" alt="">
-            <div class="projetos">
-                <div>
-                    <img src="medias/lading-photo.png" alt="">
-                    <p>Landing Page</p>
-                </div>
-
-                <div>
-                    <img src="medias/shoptec.png" alt="">
-                    <p>Shoptech</p>
-                </div>
-
-                <div>
-                    <img src="medias/tela-login.png" alt="">
-                    <p>Tela de Login Resposiva</p>
-                </div>
-
-                <div>
-                    <img src="medias/celular.png" alt="">
-                    <p>Projeto Social</p>
-                </div>
-
-                <div>
-                    <img src="medias/cordel.png" alt="">
-                    <p>Projeto Cordel</p>
-                </div>
-
-                <div>
-                    <img src="medias/android.png" alt="">
-                    <p>Projeto Android</p>
-                </div>
+            <div class="opcoes-nav">
+                <img id="imgJs" src="../imgs/javascript_logo.png" alt="">
+                <p style="background-image: linear-gradient(to bottom right, rgb(83, 83, 0), rgb(202, 202, 2));" id="textJs">Javascript</p>
+            </div>
+            <div class="opcoes-nav">
+                <img id="imgReact" src="../imgs/react.png" alt="">
+                <p style="background-image: linear-gradient(to bottom right,#005AA7,#FFFDE4);" id="textReact">React.Js</p>
+            </div>
+            <div class="opcoes-nav">
+                <img id="imgPhp" src="../imgs/php.webp" alt="">
+                <p style="background-image: linear-gradient(to bottom right,brown, rgb(56, 21, 21));" id="textPhp">PHP</p>
+            </div>
+            <div class="opcoes-nav">
+                <img id="imgApi" src="medias/api.png" alt="">
+                <p style="background-image: linear-gradient(to bottom right,darkblue, #252525);" id="textApi">API</p>
             </div>
         </div>
 
-        <div id="NAVApi" class="tech">
-            <img src="medias/api.png" alt="">
-            <div class="projetos">
-                <div>
-                    <img src="medias/advice.png" alt="">
-                    <p>Gerador de Conselhos</p>
-                </div>
-
-                <div>
-                    <img src="medias/pokedex.png" alt="">
-                    <p>Pokedex</p>
-                </div>
+        <div class="container">
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/lading-photo.png" alt="">
+                <p>Landing Page</p>
             </div>
-        </div>
-
-        <div id="NAVJs" class="tech">
-            <img src="../imgs/javascript_logo.png" alt="">
-            <div class="projetos">
-                <div>
-                    <img src="medias/espaco.png" alt="">
-                    <p>Turismo Espacial</p>
-                </div>
-
-                <div>
-                    <img src="medias/produto.PNG" alt="">
-                    <p>Página de Produto</p>
-                </div>
-
-                <div>
-                    <img src="medias/pacote.png" alt="">
-                    <p>Página de Pacotes</p>
-                </div>
-
-                <div>
-                    <img src="medias/Jornatech.png" alt="">
-                    <p>Jornatech</p>
-                </div>
-
-                <div>
-                    <img src="medias/clonenet.png" alt="">
-                    <p>Clone Netflix</p>
-                </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/shoptec.png" alt="">
+                <p>shoptech</p>
             </div>
-        </div>
-
-        <div id="NAVReact" class="tech">
-            <img src="../imgs/react.png" alt="">
-            <div class="projetos">
-                <div>
-                    <img src="medias/cartao.png" alt="">
-                    <p>Cartão Interativo</p>
-                </div>
-
-                <div>
-                    <img src="medias/nft.png" alt="">
-                    <p>Cartão de NFT</p>
-                </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/tela-login.png" alt="">
+                <p>tela de login responsiva</p>
             </div>
-        </div>
-
-        <div style="padding-bottom: 20px;" id="NAVReact" class="tech">
-            <img src="../imgs/php.webp" alt="">
-            <div class="projetos">
-                <div>
-                    <img src="medias/calcRap.png" alt="">
-                    <p>Calculadora de Lucro</p>
-                </div>
-                
-                <div>
-                    <img src="medias/tab.png" alt="">
-                    <p>Gerador de Tabuadas</p>
-                </div>
-
-                <div>
-                    <img src="medias/lacnhe.png" alt="">
-                    <p>Aba de Compra de Lanche</p>
-                </div>
-
-                <div>
-                    <img src="medias/bhak.png" alt="">
-                    <p>Calculadora de Bhaskara</p>
-                </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/clonenet.png" alt="">
+                <p>Clone da Netflix</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/celular.png" alt="">
+                <p>Projetos Redes Sociais</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/cordel.png" alt="">
+                <p>Cordel Moderno</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7, purple);">
+                <img src="medias/android.png" alt="">
+                <p>Projeto Android</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right, rgb(83, 83, 0), rgb(202, 202, 2));">
+                <img src="medias/espaco.png" alt="">
+                <p>Turismo Espacial</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right, rgb(83, 83, 0), rgb(202, 202, 2));">
+                <img src="medias/produto.PNG" alt="">
+                <p>Página inicial de produto</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right, rgb(83, 83, 0), rgb(202, 202, 2));">
+                <img src="medias/pacote.png" alt="">
+                <p>Página de pacotes</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right, rgb(83, 83, 0), rgb(202, 202, 2));">
+                <img src="medias/Jornatech.png" alt="">
+                <p>JornaTech</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7,#FFFDE4);">
+                <img src="medias/cartao.png" alt="">
+                <p>Cartão interativo</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,#005AA7,#FFFDE4);">
+                <img src="medias/nft.png" alt="">
+                <p>Cartao nft</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,brown, rgb(56, 21, 21));">
+                <img src="medias/calcRap.png" alt="">
+                <p>Calculadora de Lucro</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,brown, rgb(56, 21, 21));">
+                <img src="medias/lacnhe.png" alt="">
+                <p>bidi lanches</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,brown, rgb(56, 21, 21));">
+                <img src="medias/tab.png" alt="">
+                <p>gerador de tabuada</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,brown, rgb(56, 21, 21));">
+                <img src="medias/bhak.png" alt="">
+                <p>Calculadora de Bhaskara</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,darkblue, #252525);" >
+                <img src="medias/advice.png" alt="">
+                <p>Gerador de conselho</p>
+            </div>
+            <div style="background-image: linear-gradient(to bottom right,darkblue, #252525);" >
+                <img src="medias/pokedex.png" alt="">
+                <p>pokedex</p>
             </div>
         </div>
         
@@ -175,9 +132,6 @@
             <a href="https://www.linkedin.com/in/pablo-bidiaki/" target="_blank"><img src="../imgs/linkedin.png" alt=""></a>
         </div>
     </main>
-
-    <button id="voltar">TECH's</button>
     <script src="scripts/script.js"></script>
-    <script src="scripts/navegacoes.js"></script>
 </body>
 </html>
