@@ -133,6 +133,7 @@ burguer.addEventListener('click', () => {
     main.style.display="none"
     burguer.style.opacity = "0"
     lista.style.display = 'flex'
+    lista.classList.remove = 'none'
     lista.classList.add('burguerON')   
 })
 

@@ -149,6 +149,7 @@ a img:hover{
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    width: 100%;
 }
 
 #modal{

@@ -3,6 +3,7 @@ const closeBurguer = document.getElementById("close-button")
 const lista = document.getElementById("lista")
 const main = document.getElementById("main")
 const header = document.getElementById('header')
+const redesSociais = document.getElementById('redes')
 
 const imgHTML = document.getElementById('imgHTML')
 const textHTML = document.getElementById('textHTML')
@@ -44,7 +45,7 @@ const buttonClose = document.getElementById('buttonClose')
 
 function bugBurguer(){
     var largura = window.innerWidth;
-    if(largura > 962){
+    if(largura > 830){
         burguer.style.display = "none"
         lista.style.display = 'flex'
     }else {
@@ -69,6 +70,8 @@ burguer.addEventListener('click', () => {
     main.style.display="none"
     burguer.style.opacity = "0"
     lista.style.display = 'flex'
+    lista.classList.remove = 'none'
+    redesSociais.style.display = 'none' 
     lista.classList.add('burguerON')   
 })
 
@@ -78,6 +81,7 @@ closeBurguer.addEventListener('click', () => {
     main.style.display="block"
     burguer.style.opacity = "1"
     lista.style.display = 'none'
+    redesSociais.style.display = 'block' 
     lista.classList.remove('burguerON')
 
     setInterval(bugBurguer, 500)
@@ -183,7 +187,7 @@ telaLogin.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/wk7HoOFA-fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Tela de login responsiva."
     resumo.innerHTML = 'Projeto realizado no curso de HTML e CSS do "cursoemvideo", principal foco do desafio era a realizar uma tela de login responsiva após aulas sobre responsividade e inputs, para a realização utilizei HTMl, CSS e conceitos de responsividade.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Tela-Login-responsiva' target= '_blank'>repositório no Github</a> "
@@ -196,7 +200,7 @@ Netflix.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/vGnN0GU5pEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Clone da Netflix."
     resumo.innerHTML = 'Projeto realizado no primeiro bootcamp que me inscrevi, foi meu primeiro projeto prático fora da etec e foi realizado junto com um professor auxiliando no desenvolvimento, para a conclusão foi utilizado HTML CSS e Bootstrap.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/clone_netflix' target= '_blank'>repositório no Github</a> "
@@ -209,7 +213,7 @@ Sociais.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/pqvAFqp77fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Projeto redes sociais."
     resumo.innerHTML = 'Projeto realizado no curso de HTML e CSS do cursoemvideo, principal foco do projeto era exercitar os conhecimentos sobre iframe passados anteriormente no curso, para a conclusão foi utilizado HTML e CSS.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Projeto-social' target= '_blank'>repositório no Github</a> "
@@ -222,7 +226,7 @@ Cordel.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/3LQuwNq5_oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Cordel Moderno."
     resumo.innerHTML = 'Projeto realizado no curso de HTML e CSS do cursoemvideo, um dos primeiros projetos apresentados no curso, por isso algo mais simples, HTML e CSS foi utilizado para a conclusão.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/projeto-cordel' target= '_blank'>repositório no Github</a> "
@@ -235,7 +239,7 @@ Android.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/Aft0EAQbuJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Projeto Android."
     resumo.innerHTML = 'Projeto realizado no curso de HTML e CSS do cursoemvideo, principal objetivo do projeto era aprender na prática sobre responsividade e modelagem de um site trazendo as informações sobre o Android.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/projeto-android' target= '_blank'>repositório no Github</a> "
@@ -287,7 +291,7 @@ port.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/1YV9XQmLSLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Portfólio."
     resumo.innerHTML = 'Projeto pessoal realizado com principal foco de mostrar minhas habilidades e juntar meus projetos para as pessoas que se interessar, para a realização foi utilizado HTML, CSS e Javascript.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Portfolio' target= '_blank'>repositório no Github</a> "
@@ -365,7 +369,7 @@ Lucro.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/A0MumMUAP7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Calculadora de Lucro."
     resumo.innerHTML = 'Projeto onde eu e um colega da minha sala do curso técnico fomos selecionados para criarmos e apresentar um projeto utilizando HTML, CSS e PHP representando nosso módulo e curso na feira técnologica da escola.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Feira-Tecnologica' target= '_blank'>repositório no Github</a> "
@@ -378,7 +382,7 @@ lanches.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/aRW8MDFE9ZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Bidi Lanches."
     resumo.innerHTML = 'Projeto realizado no meu curso técnico na aula de Desenvolvimento Web II, onde a principal ideia do projeto era manipularmos valores enviados de um formulário, para a conclusão foi utilizado HTML, CSS e PHP.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Lanchonete-PHP' target= '_blank'>repositório no Github</a> "
@@ -404,7 +408,7 @@ Bhaskara.addEventListener('click', () => {
     modal.classList.remove('none')
     main.style.opacity = ".2"
     header.style.opacity = ".2"
-    exemplo.innerHTML = ''
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/N1Genmm9k2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     titulo.innerHTML = "Calculadora de Bhaskara."
     resumo.innerHTML = 'Projeto realizado no meu curso técnico na aula de Desenvolvimento Web II, principal foco era praticar manipulação de valores de formulários e lógica de programação, para a conclusão foi utilizado HTML, CSS e PHP.'
     data.innerHTML = 'Projeto finalizado em : 30/08/2022.'
