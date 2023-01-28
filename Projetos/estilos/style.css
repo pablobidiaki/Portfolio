@@ -65,15 +65,14 @@ a img:hover{
     margin: 20px 0px;
 }
 
-
-
 .contact{
-    bottom: 0;
+    bottom: 20px;
     position: relative;
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 70px;
+
 }
 
 .contact a{
@@ -187,9 +186,14 @@ a img:hover{
     margin: 0px 45px 10px 45px;
 }
 
-#data{
+#data, #link{
     text-align: center;
     margin: 20px;
+}
+
+#link a {
+    text-decoration: underline;
+    color: blue;
 }
 
 #buttonClose{
