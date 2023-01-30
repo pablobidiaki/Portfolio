@@ -34,6 +34,7 @@ const tabuada = document.getElementById('tabuada')
 const Bhaskara = document.getElementById('Bhaskara') 
 const conselho = document.getElementById('conselho')
 const pokedex = document.getElementById('pokedex')
+const sunnyside = document.getElementById('sunnyside')
 
 const modal = document.getElementById('modal')
 const exemplo = document.getElementById('exemplo')
@@ -309,6 +310,19 @@ JornaTech.addEventListener('click', () => {
     resumo.innerHTML = 'Projeto pessoal realizado como desafio do site "frontendmentor.io", principal foco é a simulação de uma página de notícias sobre tecnologia, foi utilizado HTML, CSS e Javascript para a conclusão. '
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Pagina_Inicial_Noticias' target= '_blank'>repositório no Github</a> "
     data.innerHTML = 'Projeto finalizado em : 15/12/2022.'
+    travarScroll();
+})
+
+sunnyside.addEventListener('click', () => {
+    window.location.href="#main"
+    modal.classList.remove('none')
+    main.style.opacity = ".2"
+    header.style.opacity = ".2"
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/xuMT-4h_mGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    titulo.innerHTML = "Sunnyside."
+    resumo.innerHTML = 'Projeto pessoal realizado como desafio do site "frontendmentor.io", principal foco é a simulação de uma página de um site que oferece serviços para vendas online, foi utilizado HTML, CSS e Javascript para a conclusão. '
+    link.innerHTML = "<a href='https://github.com/pablobidiaki/Loja-Sunnyside' target= '_blank'>repositório no Github</a> "
+    data.innerHTML = 'Projeto finalizado em : 30/01/2023.'
     travarScroll();
 })
 
