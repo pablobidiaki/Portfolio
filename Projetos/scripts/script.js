@@ -35,6 +35,7 @@ const Bhaskara = document.getElementById('Bhaskara')
 const conselho = document.getElementById('conselho')
 const pokedex = document.getElementById('pokedex')
 const sunnyside = document.getElementById('sunnyside')
+const empregos = document.getElementById('empregos')
 
 const modal = document.getElementById('modal')
 const exemplo = document.getElementById('exemplo')
@@ -155,7 +156,6 @@ textReact.addEventListener('click', () => {
 textPhp.addEventListener('click', () => {
     window.location.href='#Lucro'
 })
-
 
 Landing.addEventListener('click', () => {
     window.location.href="#main"
@@ -323,6 +323,19 @@ sunnyside.addEventListener('click', () => {
     resumo.innerHTML = 'Projeto pessoal realizado como desafio do site "frontendmentor.io", principal foco é a simulação de uma página de um site que oferece serviços para vendas online, foi utilizado HTML, CSS e Javascript para a conclusão. '
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Loja-Sunnyside' target= '_blank'>repositório no Github</a> "
     data.innerHTML = 'Projeto finalizado em : 30/01/2023.'
+    travarScroll();
+})
+
+empregos.addEventListener('click', () => {
+    window.location.href="#main"
+    modal.classList.remove('none')
+    main.style.opacity = ".2"
+    header.style.opacity = ".2"
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/2KC64IOBHhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    titulo.innerHTML = "Empregos com filtro."
+    resumo.innerHTML = 'Projeto pessoal realizado como desafio do site "frontendmentor.io", principal foco é a simulação de uma página com vagas de emprego onde é possível a filtragem das vagas com algumas opções. Para a conclusão utilizei HTML, CSS e Javascript '
+    link.innerHTML = "<a href='https://github.com/pablobidiaki/EmpregosComFiltro' target= '_blank'>repositório no Github</a> "
+    data.innerHTML = 'Projeto finalizado em : 02/02/2023.'
     travarScroll();
 })
 
