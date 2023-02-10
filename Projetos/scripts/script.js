@@ -36,6 +36,7 @@ const conselho = document.getElementById('conselho')
 const pokedex = document.getElementById('pokedex')
 const sunnyside = document.getElementById('sunnyside')
 const empregos = document.getElementById('empregos')
+const buscaCep = document.getElementById('buscaCep')
 
 const modal = document.getElementById('modal')
 const exemplo = document.getElementById('exemplo')
@@ -296,7 +297,7 @@ port.addEventListener('click', () => {
     titulo.innerHTML = "Portfólio."
     resumo.innerHTML = 'Projeto pessoal realizado com principal foco de mostrar minhas habilidades e juntar meus projetos para as pessoas que se interessar, para a realização foi utilizado HTML, CSS e Javascript.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Portfolio' target= '_blank'>repositório no Github</a> "
-    data.innerHTML = 'Última atualização em : 28/01/2022.'
+    data.innerHTML = 'Última atualização em : 10/02/2023.'
     travarScroll();
 })
 
@@ -362,6 +363,19 @@ pokedex.addEventListener('click', () => {
     resumo.innerHTML = 'Projeto que realizei no último bootcamp que me inscrevi, onde no fim do módulo de Javascript esse foi o projeto que foi realizado com a ajuda de um professor.'
     link.innerHTML = "<a href='https://github.com/pablobidiaki/Pokedex' target= '_blank'>repositório no Github</a> "
     data.innerHTML = 'Projeto finalizado em : 17/11/2022.'
+    travarScroll();
+})
+
+buscaCep.addEventListener('click', () => {
+    window.location.href="#main"
+    modal.classList.remove('none')
+    main.style.opacity = ".2"
+    header.style.opacity = ".2"
+    exemplo.innerHTML = '<iframe src="https://www.youtube.com/embed/X1E_GcpU010" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    titulo.innerHTML = "Buscardor de CEP."
+    resumo.innerHTML = 'Projeto pessoal realizado, principal foco foi realizar uma aplicação onde o usuário digita um CEP e ao confirmar se abre um "card" com diversas informações sobre tal CEP, para a conclusão do desafio utilizei conceitos de HTML, CSS, Javascript ,"useState" e "useEffect" que são hooks do React.'
+    link.innerHTML = "<a href='https://github.com/pablobidiaki/BuscadorCepReact' target= '_blank'>repositório no Github</a> "
+    data.innerHTML = 'Projeto finalizado em : 09/02/2023.'
     travarScroll();
 })
 
